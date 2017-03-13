@@ -8,5 +8,8 @@ El proceso de generación de números (gestionado mediante un temporizador) est�
 
 El módulo consta de tres capas:
  
-1. Top Half
-* Temporizador del kernel que genera secuencia de números y los inserta en un buffer circular acotado
+* Top Half: Temporizador del kernel que genera secuencia de números y los inserta en un buffer circular acotado
+* Bottom Half: Tarea diferida que transfiere los enteros del buffer circular a la lista enlazada.
+* Upper Layer: Implementación de operaciones asociadas a las entradas `/proc` exportadas por el módulo.
+
+
