@@ -1,4 +1,4 @@
-# modtimer
+# Modtimer
 Kernel module that generates random numbers and insert them in a linked list.
 
 The module allows a single program to "consume" the list numbers by reading from the entry ```/proc/modtimer```. The program will crash if the list is empty when reading.
